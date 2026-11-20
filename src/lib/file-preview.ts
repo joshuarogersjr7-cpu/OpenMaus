@@ -10,6 +10,7 @@ import { SIDEBAR_AND_PANEL_FIT } from "./use-media-query";
 export interface FilePreview {
   kind: "html" | "markdown" | "table";
   path: string;
+  shownPath?: string;
   name: string;
   message: { threadId: string; messageId: string };
   /** What opened it, to take focus back when the person closes the pane. */
